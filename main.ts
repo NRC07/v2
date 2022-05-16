@@ -1,9 +1,9 @@
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 15; index++) {
+        music.playTone(880, music.beat(BeatFraction.Whole))
         strip.showColor(neopixel.colors(NeoPixelColors.Red))
-        basic.pause(750)
+        music.playTone(523, music.beat(BeatFraction.Whole))
         strip.showColor(neopixel.colors(NeoPixelColors.Blue))
-        basic.pause(750)
     }
 })
 input.onButtonPressed(Button.B, function () {
